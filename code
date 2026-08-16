@@ -1,0 +1,28 @@
+#include<Servo.h>
+#include<DHT.h>
+DHT dht(9,DHT11);
+float temp;
+Servo s;
+void setup()
+{s.attach(3);
+ Serial.begin(9600);
+dht.begin();
+ pinMode(A0,INPUT);
+}
+void loop()
+{float temp=dht.readTemperature();
+  Serial.println(temp);
+ if(temp<=25)
+ { s.write(30);
+ }
+else if(temp<=35)
+ { s.write(70);
+ }
+ else if(temp<=45)
+ {s.write(100);
+ }
+ else
+ { s.write(140);
+ }
+  delay(1000); 
+}
