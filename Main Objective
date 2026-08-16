@@ -1,0 +1,12 @@
+The objective was not simply to switch a fan ON and OFF.
+
+I wanted to explore how an embedded controller could retrofit an existing
+household appliance without replacing its original control mechanism.
+I want to improve better comfort with fan speed control  without manual adjustment at night with low cost
+
+Instead of electronically redesigning the entire fan, the system uses a
+servo motor as an actuator to physically operate the existing regulator.
+
+This approach combines:
+
+Sensor → Embedded Controller → Control Algorithm → Actuator → Appliance
