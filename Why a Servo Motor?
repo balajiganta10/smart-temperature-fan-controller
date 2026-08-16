@@ -1,0 +1,18 @@
+### Why a Servo Motor?
+
+Instead of directly modifying the fan's internal electronics, a servo
+motor mechanically operates the existing regulator.
+
+Advantages:
+
+- Retrofit existing fans
+- Avoid redesigning the fan motor
+- Simple actuator control
+- Easy calibration
+- Maintains manual regulator concept
+- Low-cost prototype
+
+### Why a Capacitive Regulator?
+
+A capacitive regulator was selected instead of a resistive regulator to
+reduce resistive heat losses during speed control.
